@@ -1,7 +1,8 @@
 # Gaussian naive bayes is a naive bayes algorithm that follows a gaussian normal dostribution and supports continuous data
-# Assumes thatthe continuos value associated with each value are distributed in a normal distribution
+# Assumes that the continuos value associated with each value are distributed in a normal distribution
 
-#trying to use GNB to estimate if a person will buy a car or not. The information we have about them is their gender age and estimated salary
+#trying to use GNB to estimate if a person will buy a car or not. 
+# The information we have about them is their gender age and estimated salary
 
 import pandas as pd
 from sklearn.model_selection import train_test_split  
@@ -17,8 +18,8 @@ import matplotlib.pyplot as plt
 suv_data = pd.read_csv('/Users/judygitahi/Code/upgraded-potato/2-Gaussian_NB/suv_data.csv')
 print(suv_data.head())
 
-#the dataset we have currently has all values filled in so I split it into a test set and a training set
-#x, the explanatory variables are age and estimated salary , and the outcome variable is the purchased column 
+#  the dataset we have currently has all values filled in so I split it into a test set and a training set
+# x, the explanatory variables are age and estimated salary , and the outcome variable is the purchased column 
 
 x = suv_data.iloc[:, [2, 3]].values 
 y = suv_data.iloc[:, 4].values  
